@@ -42,7 +42,7 @@
                       <v-card-actions>
                         <v-btn
                           :class="{ 'show-btns': hover }"
-                          color="cyan"
+                          color="teal"
                           rounded
                         >
                           ver no Github

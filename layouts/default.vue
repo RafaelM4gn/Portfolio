@@ -9,10 +9,11 @@
       <v-spacer />
       <div class="text-center mx-2">
         <v-btn
-          class="mx-1"
+          class="ma-2"
           rounded
           to="/"
           outlined
+          color="teal"
           @click.stop="rightDrawer = !rightDrawer"
         >
           HOME
@@ -22,6 +23,7 @@
           rounded
           to="/projects"
           outlined
+          color="teal"
           @click.stop="rightDrawer = !rightDrawer"
         >
           PROJETOS
@@ -66,12 +68,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 #app {
   // background-color: #CB997E;
 
+  // background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+  background-image: linear-gradient(124deg, #1de840, #2b1de8, #dd00f3);
+  background-size: 100% 100%;
+  animation: rainbow 18s ease infinite;
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 0%
+    }
+
+    50% {
+      background-position: 100% 19%
+    }
+
+    100% {
+      background-position: 0% 0%
+    }
+  }
+
   // #tabs  {
-    // background-color: #EDEDED;
+  // background-color: #EDEDED;
   // }
 }
 </style>
