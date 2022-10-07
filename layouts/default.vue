@@ -5,30 +5,12 @@
       fixed
       app
     >
-      <h1>RAFAEL MAGNO</h1>
-      <v-spacer />
-      <div class="text-center mx-2">
-        <v-btn
-          class="ma-2"
-          rounded
-          to="/"
-          outlined
-          color="teal"
-          @click.stop="rightDrawer = !rightDrawer"
-        >
-          HOME
-        </v-btn>
-        <v-btn
-          class="mx-1"
-          rounded
-          to="/projects"
-          outlined
-          color="teal"
-          @click.stop="rightDrawer = !rightDrawer"
-        >
-          PROJETOS
-        </v-btn>
-     </div>
+       <v-app-bar-title >RAFAELM4GN</v-app-bar-title>
+       <!-- <h1 >RAFAEL MAGNO</h1> -->
+      <v-tabs v-model="tab" color="deep-purple-accent-4" right>
+        <v-tab to="/" :value="1">HOME</v-tab>
+        <v-tab to="/projects" :value="2">PROJETOS</v-tab>
+      </v-tabs>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -69,13 +51,13 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  // background-color: #CB997E;
-
-  // background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
   background-image: linear-gradient(124deg, #1de840, #2b1de8, #dd00f3);
-  background-size: 100% 100%;
+  background-size: 300% 300%;
   animation: rainbow 18s ease infinite;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   @keyframes rainbow {
     0% {
       background-position: 0% 0%
@@ -89,9 +71,26 @@ export default {
       background-position: 0% 0%
     }
   }
-
-  // #tabs  {
-  // background-color: #EDEDED;
-  // }
 }
+
+#app h1 {
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0,0, .1));
+  margin-top: -7rem;
+}
+
+#app v-app-bar-title {
+  color: black;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: drop-shadow(0px 3px 2px rgba(0, 0,0, .1));
+  margin-top: -7rem;
+}
+
+.gradient {
+  background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+
 </style>
