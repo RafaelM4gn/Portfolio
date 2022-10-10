@@ -5,13 +5,20 @@
       fixed
       app
     >
-    <div>
-       <nuxt-logo/>
-    </div>
-       <!-- <h1 >RAFAEL MAGNO</h1> -->
+      <div>
+        <nuxt-logo />
+      </div>
+      <!-- <h1 >RAFAEL MAGNO</h1> -->
       <v-tabs v-model="tab" color="deep-purple-accent-4" right>
-        <v-tab to="/" :value="1">HOME</v-tab>
-        <v-tab to="/projects" :value="2">PROJETOS</v-tab>
+        <v-tab to="/" :value="1">
+          HOME
+        </v-tab>
+        <v-tab to="/projects" :value="2">
+          PROJETOS
+        </v-tab>
+        <v-tab to="/threejs" :value="3">
+          THREEJS
+        </v-tab>
       </v-tabs>
     </v-app-bar>
     <v-main>
@@ -53,9 +60,9 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  background-image: linear-gradient(124deg, #1de840, #2b1de8, #dd00f3);
+  background-image: linear-gradient(124deg, #1de840, #284ec0, #dd00f3);
   background-size: 300% 300%;
-  animation: rainbow 18s ease infinite;
+  animation: rainbow 19s ease infinite;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,14 +80,6 @@ export default {
       background-position: 0% 0%
     }
   }
-}
-
-#app h1 {
-  color: black;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  filter: drop-shadow(0px 3px 2px rgba(0, 0,0, .1));
-  margin-top: -7rem;
 }
 
 #app v-app-bar-title {

@@ -5,8 +5,9 @@
       align="center"
       justify="center"
     >
-      <template v-for="(item, i) in items">
+      <template>
         <v-col
+          v-for="(item, i) in items"
           :key="i"
           cols="12"
           md="4"
@@ -38,16 +39,15 @@
                         {{ item.subtext }}
                       </p>
                     </div>
-
-                      <v-card-actions>
-                        <v-btn
-                          :class="{ 'show-btns': hover }"
-                          color="teal"
-                          rounded
-                        >
-                          ver no Github
-                        </v-btn>
-                      </v-card-actions>
+                    <v-card-actions>
+                      <v-btn
+                        :class="{ 'show-btns': hover }"
+                        color="teal"
+                        rounded
+                      >
+                        ver no Github
+                      </v-btn>
+                    </v-card-actions>
                   </v-row>
                 </v-card-title>
               </v-img>
