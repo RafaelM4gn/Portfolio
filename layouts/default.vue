@@ -9,15 +9,13 @@
         <nuxt-logo />
       </div>
       <!-- <h1 >RAFAEL MAGNO</h1> -->
-      <v-tabs v-model="tab" color="deep-purple-accent-4" right>
-        <v-tab to="/" :value="1">
-          HOME
-        </v-tab>
-        <v-tab to="/projects" :value="2">
-          PROJETOS
-        </v-tab>
-        <v-tab to="/threejs" :value="3">
-          THREEJS
+      <v-tabs
+        v-model="tab"
+        color="deep-purple-accent-4"
+        right
+      >
+        <v-tab v-for="(item, i) in items" :key="i" :to="item.to" :value="i">
+          {{ item.title }}
         </v-tab>
       </v-tabs>
     </v-app-bar>
@@ -39,14 +37,20 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'HOME',
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
+          title: 'PROJETOS',
+          to: '/projects'
+        },
+        {
+          title: 'THREEJS',
+          to: '/threejs'
+        },
+        {
+          title: 'ABOUT',
+          to: '/about'
         }
       ],
       miniVariant: false,
