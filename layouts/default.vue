@@ -5,7 +5,9 @@
       fixed
       app
     >
-       <v-app-bar-title >RAFAELM4GN</v-app-bar-title>
+    <div>
+       <nuxt-logo/>
+    </div>
        <!-- <h1 >RAFAEL MAGNO</h1> -->
       <v-tabs v-model="tab" color="deep-purple-accent-4" right>
         <v-tab to="/" :value="1">HOME</v-tab>
