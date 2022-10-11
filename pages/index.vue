@@ -1,33 +1,34 @@
 <template>
   <div>
-    <nuxt-logo />
-    <v-row>
-      <h1 class="gradient">
-        TESTE
+    <v-responsive min-height="30vh" />
+    <v-divider class="divider" />
+    <h1 class="intro">
+      Hello, I'm
+    </h1>
+    <h1 class="myname">
+      RAFAEL MAGNO
+    </h1>
+    <h1 class="outro">
+      A Full Stack Developer
+    </h1>
+    <v-divider class="divider" />
+    <div class="subh">
+      <h1>
+        Check out my projects
       </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deleniti fugit, laborum vitae numquam consequatur perferendis reiciendis molestiae eligendi, ab obcaecati dicta laboriosam inventore pariatur aperiam dolorum quis quasi. Corrupti?</p>
-      <v-card>
-        <v-card-tittle>
-          Tesntado
-        </v-card-tittle>
-      </v-card>
-      <v-card>
-        <v-card-title class="headline">
-          Olá, Seja muito bem-vindo 👋
-        </v-card-title>
-        <v-card-subtitle>
-          Sou Rafael, atualmente estou cursando o BTI pela UFRN😎
-        </v-card-subtitle>
-        <v-card-text>
-          - Gosto de muito de tecnologias e tenho sempre vontade de aprender coisas novas. 📚 <br>
-        </v-card-text>
-        <v-card-actions>
-          <v-btn block to="/projects" rounded color="cyan">
-            veja meus projetos!
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-row>
+      <v-spacer />
+      <h1>-></h1>
+      <v-spacer />
+      <v-btn
+        class="divider"
+        outlined
+        x-large
+        color="#fff"
+        to="/projects"
+      >
+        PROJECTS
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -38,11 +39,49 @@ export default {
 </script>
 
 <style>
- #app h1 {
-  color: black;
-  margin-top: 0rem;
+h1{
+  font-weight: 700;
+  font-family: 'Fira Code', monospace;
 }
 
+h2 {
+  padding-left: 9px;
+  font-size: large;
+  font-weight: 800;
+  font-family: 'Fira Code', monospace;
+  color: #272727;
+}
+
+.divider {
+  border-width: 3px;
+  height: 700px;
+}
+
+.subh {
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.intro {
+  color: #272726;
+  text-align: left;
+  font-size: 35px;
+}
+
+.myname {
+  margin-top: -30px;
+  margin-bottom: -30px;
+  color: #fff;
+  text-align: justify;
+  font-size: 100px;
+}
+
+.outro {
+  color: #272726;
+  text-align: right;
+  font-size: 35px;
+}
 .gradient {
   background: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
 }

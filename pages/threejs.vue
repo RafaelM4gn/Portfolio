@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1 class="cool">A SUPER COOL 3D CUBE!</h1>
     <div id="canvas" />
   </div>
 </template>
@@ -14,8 +15,8 @@ export default {
       background: 0x0080FF,
       alpha: 0,
       canvas: 'canvas',
-      width: '25rem',
-      height: '25rem'
+      width: '50rem',
+      height: '50rem'
     }
   },
   mounted () {
@@ -66,3 +67,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.cool {
+  text-align: center;
+  color: #272727;
+}
+</style>

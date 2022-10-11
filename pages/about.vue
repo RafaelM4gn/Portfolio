@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1 class="titleb">
-      FULLSTACK DEVELOPER JUNIOR
-    </h1>
+    <h2 class="titleb">
+      A FULLSTACK DEVELOPER JR.
+    </h2>
     <div class="box">
       <h1>hello</h1>
       <h2>RAFAel h2</h2>
@@ -42,13 +42,6 @@
 </script>
 
 <style>
-.titleb h1{
-  text-align: center;
-  font-weight: 700;
-  font-family: "Dank Mono";
-  color: #d400d4;
-
-}
 .box {
   padding: 21px;
   position: relative;

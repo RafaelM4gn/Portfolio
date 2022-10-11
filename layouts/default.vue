@@ -41,11 +41,11 @@ export default {
           to: '/'
         },
         {
-          title: 'PROJETOS',
+          title: 'PROJECTS',
           to: '/projects'
         },
         {
-          title: 'THREEJS',
+          title: 'THREE',
           to: '/threejs'
         },
         {
@@ -63,6 +63,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 #app {
   background-image: linear-gradient(124deg, #1de840, #284ec0, #dd00f3);
   background-size: 300% 300%;

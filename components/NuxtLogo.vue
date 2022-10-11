@@ -1,6 +1,6 @@
 <template>
   <div class="vue-logo">
-    <h1>RAFAELM4GN</h1>
+    <h1>RafaelM4gn</h1>
   </div>
 </template>
 
