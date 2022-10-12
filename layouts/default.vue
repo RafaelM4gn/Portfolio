@@ -49,8 +49,8 @@ export default {
           to: '/threejs'
         },
         {
-          title: 'ABOUT',
-          to: '/about'
+          title: 'CONTACT',
+          to: '/contact'
         }
       ],
       miniVariant: false,
@@ -67,7 +67,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 #app {
-  background-image: linear-gradient(124deg, #1de840, #284ec0, #dd00f3);
+  background-image: linear-gradient(135deg, #1de840, #284ec0, #dd00f3);
   background-size: 300% 300%;
   animation: rainbow 19s ease infinite;
   display: flex;
@@ -80,7 +80,7 @@ export default {
     }
 
     50% {
-      background-position: 100% 19%
+      background-position: 100% 0%
     }
 
     100% {

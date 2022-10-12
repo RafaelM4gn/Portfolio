@@ -5,13 +5,6 @@
 </template>
 
 <style>
-.vue-logo img {
-  display: block;
-  margin: auto;
-  margin-top: -50px;
-  margin-bottom: 10px;
-  height: 50px;
-}
 
 .vue-logo h1 {
   display: block;

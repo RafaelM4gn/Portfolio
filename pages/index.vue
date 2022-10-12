@@ -47,7 +47,6 @@ h1{
 h2 {
   padding-left: 9px;
   font-size: large;
-  font-weight: 800;
   font-family: 'Fira Code', monospace;
   color: #272727;
 }
