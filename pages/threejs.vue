@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="cool">A SUPER COOL 3D CUBE!</h1>
+    <h1 class="pa-4 cool">A SUPER COOL 3D CUBE!</h1>
     <div id="canvas" />
   </div>
 </template>

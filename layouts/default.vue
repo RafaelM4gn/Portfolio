@@ -67,6 +67,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 #app {
+  word-wrap: break-word;
   background-image: linear-gradient(135deg, #1de840, #284ec0, #dd00f3);
   background-size: 300% 300%;
   animation: rainbow 19s ease infinite;
