@@ -7,10 +7,11 @@
 <style>
 
 .vue-logo h1 {
-  display: block;
+  display: flex;
   margin: auto;
+  margin-bottom: 10px;
   height: 60px;
-  background-image: linear-gradient(124deg, #1de840, #284ec0, #dd00f3);
+  background-image: linear-gradient(135deg, #1de840, #284ec0, #dd00f3);
   background-size: 1000% 1000%;
   font-size: 45px;
   text-align: center;
@@ -24,11 +25,9 @@
   0% {
     background-position: 0% 0%
   }
-
   50% {
     background-position: 60% 0%
   }
-
   100% {
     background-position: 0% 0%
   }
