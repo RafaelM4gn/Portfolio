@@ -65,7 +65,7 @@ export default {
       {
         icons: 'mdi-linkedin',
         // link: 'https://www.linkedin.com/in/rafael-magno-bb47401b8/'
-        link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+        link: 'https://www.linkedin.com/in/rafael-magno-bb47401b8/'
       }
     ]
   })
